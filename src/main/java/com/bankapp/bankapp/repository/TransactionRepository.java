@@ -1,6 +1,7 @@
 package com.bankapp.bankapp.repository;
 
 import com.bankapp.bankapp.model.Transaction;
+import com.bankapp.bankapp.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

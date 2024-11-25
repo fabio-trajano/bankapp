@@ -20,8 +20,8 @@ public class AccountController {
     }
 
     @GetMapping("/{accountNumber}")
-    public ResponseEntity<Account> getAccountByNumber(@PathVariable String accountNumber) {
-        return accountService.findByAccountNumber(accountNumber)
+    public ResponseEntity<Account> getAccountByNumber(@PathVariable Long id) {
+        return accountService.findByAccountId(id)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }

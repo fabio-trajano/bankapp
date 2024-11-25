@@ -25,7 +25,7 @@ public class Account {
     private User user;
 
     @Column(unique = true, nullable = false)
-    private String accountNumber;
+    private String number;
 
     @Column(nullable = false)
     private BigDecimal balance;

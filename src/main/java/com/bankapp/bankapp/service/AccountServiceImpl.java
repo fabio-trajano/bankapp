@@ -21,11 +21,6 @@ public class AccountServiceImpl implements AccountService {
     }
 
     @Override
-    public Optional<Account> findByAccountNumber(String accountNumber) {
-        return accountRepository.findByAccountNumber(accountNumber);
-    }
-
-    @Override
     public Optional<Account> findByAccountId(Long id) {
         return accountRepository.findById(id);
     }
